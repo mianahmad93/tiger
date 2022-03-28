@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+           /* border: 2px solid black; */
+            height: 210px;
+            width: 100%;
+        }
+        #phone{
+            height: 30px;
+            width: 30px;
+            margin-left: 70px;
+            margin-top: 25px;
+        }
+        #box{
+            display: flex;
+        }
+        #box:hover{
+            cursor: pointer;
+        }
+        #contact{
+            margin-left: 20px;
+        }
+        #nbr{
+            margin-top: 45px;
+            margin-left: -70px;
+        }
+        #email{
+            height: 30px;
+            width: 30px;
+            margin-top: 25px;
+            margin-left: 30px;
+        }
+        #mail{
+            margin-left: 20px;
+            margin-right: -20px;
+        }
+        #gmail{
+            margin-top: 45px;
+            margin-left: -30px;
+        }
+        #R{
+            margin-left: 150px;
+            width: 90px;
+            height: 100px;  
+        }
+        #eval{
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        #time{
+            height: 40px;
+            width: 40px;
+            margin-top: 25px;
+            margin-left: 170px;
+        }
+        #work{
+           margin-left: 20px;
+           margin-top: 25px;
+        }
+        #hour{
+            margin-top: 50px;
+            margin-left: -60px;
+        }
+        #location{
+            height: 40px;
+            width: 40px;
+            margin-top: 25px;
+            margin-left: 30px;
+        }
+        #loc{
+            margin-left: 20px;
+           margin-top: 25px;
+        }
+        #sen{
+            margin-top: 50px;
+            margin-left: -60px;
+        }
+        #nav{
+            display: flex;
+            margin-left: 80px;
+        }
+        #nav ul li{
+            float: left;
+            margin-left: 60px;
+            list-style: none;
+            margin-top: 20px;
+        }
+        #nav ul li:hover{
+            cursor: pointer;
+            color: blue;
+            transition: 0.5s;
+        }
+        #nav ul select{
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        #btn{
+            margin-left: 100px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            border-radius: 15px;
+        }
+        #man{
+            height: 500px;
+            width: 1330px;
+        }
+        #printing{
+            margin-top: -590px;
+            margin-left: 270px;
+        }
+        #vision{
+            margin-top: 140px;
+            color: blue;
+            font-size: 20px;
+        }
+        #market{
+            margin-bottom: 30px;
+            color: rgb(49, 46, 46);
+            font-size: 50px;
+        }
+        #btn1{
+            background-color: transparent;
+            font-size: 20px;
+            color: rgb(49, 46, 46);
+            border: 1px solid rgb(49, 46, 46) ;
+        }
+        #btn1:hover{
+            cursor: pointer;
+            
+        }
+        #footer{
+            display: inline-block;
+        }
+        .box{
+            display: inline-block;
+            height: 200px;
+            width: 430px;
+            margin-left: 8px;
+            margin-top: 40px;
+        }
+        .box:nth-child(1){
+            background-color: purple;
+            vertical-align: top;
+        }
+        .box:nth-child(1) h5{
+            margin-left: 15px;
+        }
+        .box:nth-child(1) h1{
+            margin-left: 12px;
+            margin-top: -20px;
+        }
+        .box:nth-child(1) p{
+            margin-left: 15px;
+        }
+        .box:nth-child(2){
+            background-color: rgb(0, 102, 255);
+            vertical-align: top;
+        }
+        .box:nth-child(2) h5{
+            margin-left: 15px;
+        }
+        .box:nth-child(2) h1{
+            margin-left: 12px;
+            margin-top: -20px;
+        }
+        .box:nth-child(2) p{
+            margin-left: 15px;
+        }
+        .box:nth-child(3){
+            background-color: orangered;
+            vertical-align: top;
+        }
+        .box:nth-child(3) h5{
+            margin-left: 15px;
+        }
+        .box:nth-child(3) h1{
+            margin-left: 12px;
+            margin-top: -20px;
+        }
+        .box:nth-child(3) p{
+            margin-left: 15px;
+        }
+
+        #read{
+            margin-left: 20px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 10px;
+           border-style: none;
+        }
+        #read1{
+            margin-left: 20px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 10px;
+           border-style: none;
+
+        }
+        #read2{
+            margin-left: 20px;
+            font-size: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 10px;
+           border-style: none;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="head">
+        <div id="box">
+        <img id="phone" src="phone.png" alt="">
+        <h5 id="contact">Contact Us</h5>
+        <h4 id="nbr"><b>654-796-2947</b></h4>
+        <img id="email" src="email.png" alt="">
+        <h5 id="mail">Email</h5>
+        <h4 id="gmail" ><b>mian@gmail.com</b></h4>
+        <img id="R" src="R.png" alt="">
+        <h1 id="eval">evaldak</h1>
+        <img id="time" src="time.png" alt="">
+        <h5 id="work" >Work time</h5>
+        <h4 id="hour" ><b>9:00-17:00</b></h4>
+        <img id="location" src="location.png" alt="">
+        <h5 id="loc" >Location</h5>
+        <h4 id="sen" ><b>547,Sen Diege</b></h4>
+        
+    </div><hr>
+    <nav id="nav" >
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Quotes</li>
+            <li>Portfolio</li>
+            <li>Shop</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <select name=""></select>
+            <button id="btn" >Request o Quote</button>
+        </ul>
+    </nav>
+    </header>
+    <img id="man" src="man.jpg" >
+    <div id="printing" >
+    <h5 id="vision" > <b> Vision of Wisdom </b></h5>
+    <h1 id="market" > <b> We Have the Best <br> Printing Service in the <br> Market </b> </h1>
+    <button id="btn1">Read More</button>
+    </div>
+   <footer id="footer" >
+    <div class="box">
+        <h5>We work with possion</h5>
+        <h1>Proprinting Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ab. Pariatur voluptatum quaerat ullam excepturi?</p>
+      <button id="read" type="submit">Read More</button>
+    
+    </div>
+    <div class="box">
+        <h5>We work with possion</h5>
+        <h1>Graphic Design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ab. Pariatur voluptatum quaerat ullam excepturi?</p>
+        <button id="read1" type="submit">Read More</button>
+    </div>
+    <div class="box">
+        <h5>We work with possion</h5>
+        <h1>Copying Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ab. Pariatur voluptatum quaerat ullam excepturi?</p>
+        <button id="read2" type="submit">Read More</button>
+    </div>
+</footer>
+</body>
+</html>
